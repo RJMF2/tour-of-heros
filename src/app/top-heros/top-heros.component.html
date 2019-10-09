@@ -1,0 +1,15 @@
+<h4>Top Heros</h4>
+<div class="d-flex justify-content-between my-4" *ngIf="dataRecived">
+    <app-top-heros-item *ngFor="let heroData of herosData" [hero]='heroData' [routerLink]="['/edit',heroData.heroId]"
+        (click)="sendSelectedHero(heroData.id,heroData.name)">
+    </app-top-heros-item>
+    <div *ngIf="herosData.length === 0">
+        <p>No Heros to Show</p>
+    </div>
+</div>
+<div *ngIf="!dataRecived && !error">
+    <p>Loading...</p>
+</div>
+<div *ngIf="error">
+    <p>can't reach the server</p>
+</div>

@@ -1,0 +1,7 @@
+<h6>hero id : {{selectedHero.id}}</h6>
+<h4>my hero {{selectedHero.name}}</h4>
+<div class="d-flex mb-3">
+    <input class="form-control" type="text" [(ngModel)]="selectedHero.name">
+    <button class="btn btn-primary" (click)="updateHero()">Update</button>
+</div>
+<h5 *ngIf="errorMessage !== ''">{{errorMessage}}</h5>

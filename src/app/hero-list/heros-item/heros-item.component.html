@@ -1,0 +1,5 @@
+<div class="hero-info d-flex" (click)="editHero(hero)">
+    <h5 class="py-2">{{hero.id}}</h5>
+    <h5 class="py-2 px-3 text-capitalize">{{hero.name}}</h5>
+</div>
+<button class="px-3 btn btn-danger" (click)="deleteHero(hero.heroId)">Delete</button>

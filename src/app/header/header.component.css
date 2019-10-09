@@ -1,0 +1,11 @@
+div a{
+    text-decoration: none;
+    background-color:rgb(18, 103, 173); 
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: all 0.1s ease-in-out 
+}
+div a:hover{
+    background-color:rgb(20, 85, 138); 
+}

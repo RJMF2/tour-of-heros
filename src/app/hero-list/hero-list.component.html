@@ -1,0 +1,18 @@
+<div class="row">
+    <div class="col-lg-6" *ngIf="dataRecived">
+        <app-heros-item class="d-flex mb-3" (emitter)="changingData($event)" *ngFor="let heroData of herosData"
+            [hero]="heroData"></app-heros-item>
+        <div *ngIf="herosData.length == 0">
+            <p>No Heros to Show</p>
+        </div>
+    </div>
+    <div class="col-lg-6" *ngIf="dataRecived">
+        <app-add-hero [herosArr]="herosData" (emitter)="changingData($event)"></app-add-hero>
+    </div>
+</div>
+<div *ngIf="!dataRecived && !error">
+    <p>Loading...</p>
+</div>
+<div *ngIf="error">
+    <p>can't reach the server</p>
+</div>

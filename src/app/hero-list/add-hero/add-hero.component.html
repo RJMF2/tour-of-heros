@@ -1,0 +1,5 @@
+<div class="d-flex mb-3">
+    <input class="form-control" type="text" [(ngModel)]="newHero.name">
+    <button class="btn btn-success" (click)="addNewHero()">Add Hero</button>
+</div>
+<h5 *ngIf="errorMessage !== ''">{{errorMessage}}</h5>

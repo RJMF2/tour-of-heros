@@ -1,0 +1,24 @@
+.hero-info {
+    border-radius: 5px;
+    overflow: hidden;
+    color: white;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.hero-info h5 {
+    margin-bottom: 0;
+}
+
+.hero-info h5:nth-child(1) {
+    background-color: rgb(19, 135, 202);
+    width: 50px;
+    text-align: center;
+}
+
+.hero-info h5:nth-child(2) {
+    background-color: rgb(26, 93, 170);
+    min-width: 200px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px
+}
